@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 class EcommerAppBarTheme {
   EcommerAppBarTheme._(); // To avoid creating instances
