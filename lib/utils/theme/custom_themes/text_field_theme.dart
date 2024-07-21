@@ -1,71 +1,74 @@
 import 'package:flutter/material.dart';
+import 'package:project_ecommerce/utils/constants/colors.dart';
+import '../../constants/sizes.dart';
 
-class EcommerceTextFormFieldTheme {
-  EcommerceTextFormFieldTheme._(); // To avoid creating instances
+class EcommerdTextFormField {
+  EcommerdTextFormField._();
 
-  // Light Theme
   static InputDecorationTheme lightInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 3,
-    prefixIconColor: Colors.grey,
-    suffixIconColor: Colors.grey,
-    // constraints : const BoxConstraints.expand(height: 14, inputFieldHeight),
-    labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
-    hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.black),
+    prefixIconColor: EcommerceColors.darkGrey,
+    suffixIconColor: EcommerceColors.darkGrey,
+    // constraints: const BoxConstraints.expand(height: TSizes.inputFieldHeight),
+    labelStyle: const TextStyle().copyWith(
+        fontSize: EcommerceSizes.fontSizeMd, color: EcommerceColors.black),
+    hintStyle: const TextStyle().copyWith(
+        fontSize: EcommerceSizes.fontSizeSm, color: EcommerceColors.black),
     errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
-    floatingLabelStyle:
-        const TextStyle().copyWith(color: Colors.black.withOpacity(0.8)),
+    floatingLabelStyle: const TextStyle()
+        .copyWith(color: EcommerceColors.black.withOpacity(0.8)),
     border: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.grey),
+      borderRadius: BorderRadius.circular(EcommerceSizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: EcommerceColors.grey),
     ),
     enabledBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.grey),
+      borderRadius: BorderRadius.circular(EcommerceSizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: EcommerceColors.grey),
     ),
     focusedBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.black12),
+      borderRadius: BorderRadius.circular(EcommerceSizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: EcommerceColors.dark),
     ),
     errorBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.red),
+      borderRadius: BorderRadius.circular(EcommerceSizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: EcommerceColors.warning),
     ),
     focusedErrorBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 2, color: Colors.orange),
+      borderRadius: BorderRadius.circular(EcommerceSizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 2, color: EcommerceColors.warning),
     ),
   );
 
-  // Dark Theme
   static InputDecorationTheme darkInputDecorationTheme = InputDecorationTheme(
     errorMaxLines: 2,
-    prefixIconColor: Colors.grey,
-    suffixIconColor: Colors.grey,
-    // constraints : const BoxConstraints.expand(height: 14, inputFieldHeight),
-    labelStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.white),
-    hintStyle: const TextStyle().copyWith(fontSize: 14, color: Colors.white),
-    errorStyle: const TextStyle().copyWith(fontStyle: FontStyle.normal),
-    floatingLabelStyle:
-        const TextStyle().copyWith(color: Colors.black.withOpacity(0.8)),
+    prefixIconColor: EcommerceColors.darkGrey,
+    suffixIconColor: EcommerceColors.darkGrey,
+    // constraints: const BoxConstraints.expand(height: EcommerceSizes.inputFieldHeight),
+    labelStyle: const TextStyle().copyWith(
+        fontSize: EcommerceSizes.fontSizeMd, color: EcommerceColors.white),
+    hintStyle: const TextStyle().copyWith(
+        fontSize: EcommerceSizes.fontSizeSm, color: EcommerceColors.white),
+    floatingLabelStyle: const TextStyle()
+        .copyWith(color: EcommerceColors.white.withOpacity(0.8)),
     border: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.grey),
+      borderRadius: BorderRadius.circular(EcommerceSizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: EcommerceColors.darkGrey),
     ),
     enabledBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.grey),
+      borderRadius: BorderRadius.circular(EcommerceSizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: EcommerceColors.darkGrey),
     ),
     focusedBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.white),
+      borderRadius: BorderRadius.circular(EcommerceSizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: EcommerceColors.white),
     ),
     errorBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 1, color: Colors.red),
+      borderRadius: BorderRadius.circular(EcommerceSizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 1, color: EcommerceColors.warning),
     ),
     focusedErrorBorder: const OutlineInputBorder().copyWith(
-      borderRadius: BorderRadius.circular(14),
-      borderSide: const BorderSide(width: 2, color: Colors.orange),
+      borderRadius: BorderRadius.circular(EcommerceSizes.inputFieldRadius),
+      borderSide: const BorderSide(width: 2, color: EcommerceColors.warning),
     ),
   );
 }
