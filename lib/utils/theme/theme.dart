@@ -25,7 +25,7 @@ class EcommerceAppTheme {
     chipTheme: EcommerceChipTheme.lightChipTheme,
     bottomSheetTheme: EcommerceBottomSheetTheme.lightBottomSheetTheme,
     outlinedButtonTheme: EcommerceOutlinedButtonTheme.lightOutlinedButtonTheme,
-    inputDecorationTheme: EcommerceTextFormFieldTheme.lightInputDecorationTheme,
+    inputDecorationTheme: EcommerdTextFormField.lightInputDecorationTheme,
   );
 
   // Dark Theme
@@ -42,6 +42,6 @@ class EcommerceAppTheme {
     chipTheme: EcommerceChipTheme.darkChipTheme,
     bottomSheetTheme: EcommerceBottomSheetTheme.darkBottomSheetTheme,
     outlinedButtonTheme: EcommerceOutlinedButtonTheme.darkOutlinedButtonTheme,
-    inputDecorationTheme: EcommerceTextFormFieldTheme.darkInputDecorationTheme,
+    inputDecorationTheme: EcommerdTextFormField.darkInputDecorationTheme,
   );
 }
