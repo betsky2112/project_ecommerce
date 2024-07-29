@@ -74,7 +74,7 @@ class EProductCardVertical extends StatelessWidget {
                       icon: Iconsax.heart5,
                       color: Colors.red,
                     ),
-                  )
+                  ),
                 ],
               ),
             ),
@@ -96,8 +96,9 @@ class EProductCardVertical extends StatelessWidget {
               ),
             ),
 
-            Spacer(),
+            const Spacer(),
 
+            // Price Row
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

@@ -2,15 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:project_ecommerce/common/widgets/appbar/appbar.dart';
 import 'package:project_ecommerce/common/widgets/appbar/tabbar.dart';
 import 'package:project_ecommerce/common/widgets/brands/brand_card.dart';
-import 'package:project_ecommerce/common/widgets/brands/brand_show_case.dart';
-import 'package:project_ecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
 import 'package:project_ecommerce/common/widgets/custom_shapes/containers/search_container.dart';
 import 'package:project_ecommerce/common/widgets/layouts/grid_layout.dart';
 import 'package:project_ecommerce/common/widgets/products/cart/car_menu_icon.dart';
 import 'package:project_ecommerce/common/widgets/texts/section_heading.dart';
 import 'package:project_ecommerce/features/shop/screens/store/widgets/category_tab.dart';
 import 'package:project_ecommerce/utils/constants/colors.dart';
-import 'package:project_ecommerce/utils/constants/image_strings.dart';
 import 'package:project_ecommerce/utils/constants/sizes.dart';
 import 'package:project_ecommerce/utils/helpers/helper_functions.dart';
 
