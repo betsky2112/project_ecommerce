@@ -13,12 +13,16 @@ class ESearchContainer extends StatelessWidget {
     this.showBackground = true,
     this.showBorder = true,
     this.onTap,
+    this.padding = const EdgeInsets.symmetric(
+      horizontal: EcommerceSizes.defaultSpace,
+    ),
   });
 
   final String text;
   final IconData? icon;
   final bool showBackground, showBorder;
   final VoidCallback? onTap;
+  final EdgeInsetsGeometry padding;
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +31,7 @@ class ESearchContainer extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Padding(
-        padding:
-            const EdgeInsets.symmetric(horizontal: EcommerceSizes.defaultSpace),
+        padding: padding,
         child: Container(
           width: EcommerceDeviceUtils.getScreenWidth(context),
           padding: const EdgeInsets.all(EcommerceSizes.md),
@@ -45,7 +48,7 @@ class ESearchContainer extends StatelessWidget {
             children: [
               Icon(
                 icon,
-                color: EcommerceColors.darkerGrey,
+                color: dark ? EcommerceColors.darkerGrey : Colors.grey,
               ),
               const SizedBox(width: EcommerceSizes.spaceBtwItems),
               Text(
