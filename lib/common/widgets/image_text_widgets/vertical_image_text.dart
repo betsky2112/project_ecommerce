@@ -9,7 +9,7 @@ class EVerticalImageText extends StatelessWidget {
     required this.image,
     required this.title,
     this.textColor = EcommerceColors.white,
-    this.backgroundColor = EcommerceColors.white,
+    this.backgroundColor,
     this.onTap,
   });
 
