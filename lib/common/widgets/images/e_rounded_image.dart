@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:project_ecommerce/utils/constants/colors.dart';
 import 'package:project_ecommerce/utils/constants/sizes.dart';
 
 class ERounderImage extends StatelessWidget {
@@ -10,7 +9,7 @@ class ERounderImage extends StatelessWidget {
     required this.imageUrl,
     this.applyImageRadius = true,
     this.border,
-    this.backgroundColor = EcommerceColors.light,
+    this.backgroundColor,
     this.fit = BoxFit.contain,
     this.padding,
     this.isNetworkImage = false,
@@ -22,7 +21,7 @@ class ERounderImage extends StatelessWidget {
   final String imageUrl;
   final bool applyImageRadius;
   final BoxBorder? border;
-  final Color backgroundColor;
+  final Color? backgroundColor;
   final BoxFit? fit;
   final EdgeInsetsGeometry? padding;
   final bool isNetworkImage;
