@@ -4,10 +4,10 @@ import 'package:project_ecommerce/common/widgets/custom_shapes/curved_edges/curv
 class ECurvedEdgeWidget extends StatelessWidget {
   const ECurvedEdgeWidget({
     super.key,
-    this.child,
+    required this.child,
   });
 
-  final Widget? child;
+  final Widget child;
 
   @override
   Widget build(BuildContext context) {
