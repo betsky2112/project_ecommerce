@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:project_ecommerce/common/styles/shadows.dart';
 import 'package:project_ecommerce/common/widgets/custom_shapes/containers/rounded_container.dart';
@@ -7,6 +8,7 @@ import 'package:project_ecommerce/common/widgets/images/e_rounded_image.dart';
 import 'package:project_ecommerce/common/widgets/texts/e_brand_title_text_with_verified_icon.dart';
 import 'package:project_ecommerce/common/widgets/texts/product_price_text.dart';
 import 'package:project_ecommerce/common/widgets/texts/product_title_text.dart';
+import 'package:project_ecommerce/features/shop/screens/product_details/product_detail.dart';
 import 'package:project_ecommerce/utils/constants/colors.dart';
 import 'package:project_ecommerce/utils/constants/image_strings.dart';
 import 'package:project_ecommerce/utils/constants/sizes.dart';
@@ -19,14 +21,13 @@ class EProductCardVertical extends StatelessWidget {
   Widget build(BuildContext context) {
     final dark = EcommerceHelperFunctions.isDarkMode(context);
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetailScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
         decoration: BoxDecoration(
           boxShadow: [EShadowStyle.verticalProductShadow],
-          borderRadius:
-              BorderRadius.circular(EcommerceSizes.productImageRadius),
+          borderRadius: BorderRadius.circular(EcommerceSizes.productImageRadius),
           color: dark ? EcommerceColors.darkGrey : EcommerceColors.white,
         ),
         child: Column(
@@ -35,8 +36,7 @@ class EProductCardVertical extends StatelessWidget {
             ERoundedContainer(
               height: 180,
               padding: const EdgeInsets.all(EcommerceSizes.sm),
-              backgroundColor:
-                  dark ? EcommerceColors.dark : EcommerceColors.light,
+              backgroundColor: dark ? EcommerceColors.dark : EcommerceColors.light,
               child: Stack(
                 children: [
                   // Thumbnail Image
@@ -50,8 +50,7 @@ class EProductCardVertical extends StatelessWidget {
                     top: 12,
                     child: ERoundedContainer(
                       radius: EcommerceSizes.sm,
-                      backgroundColor:
-                          EcommerceColors.secondary.withOpacity(0.8),
+                      backgroundColor: EcommerceColors.secondary.withOpacity(0.8),
                       padding: const EdgeInsets.symmetric(
                         horizontal: EcommerceSizes.sm,
                         vertical: EcommerceSizes.xs,

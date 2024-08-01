@@ -31,16 +31,13 @@ class ECircularImage extends StatelessWidget {
       height: height,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
-        color: backgroundColor ??
-            (dark ? EcommerceColors.dark : EcommerceColors.white),
+        color: backgroundColor ?? (dark ? Colors.black : EcommerceColors.white),
         borderRadius: BorderRadius.circular(100),
       ),
       child: Center(
         child: Image(
           fit: fit,
-          image: isNetworkImage
-              ? NetworkImage(image)
-              : AssetImage(image) as ImageProvider,
+          image: isNetworkImage ? NetworkImage(image) : AssetImage(image) as ImageProvider,
           color: overlayColor,
         ),
       ),
