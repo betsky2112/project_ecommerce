@@ -22,8 +22,19 @@ class EcommerceHelperFunctions {
       return Colors.black;
     } else if (value == 'White') {
       return Colors.white;
+    } else if (value == 'Yellow') {
+      return Colors.yellow;
+    } else if (value == 'Orange') {
+      return Colors.deepOrange;
+    } else if (value == 'Brown') {
+      return Colors.brown;
+    } else if (value == 'Teal') {
+      return Colors.teal;
+    } else if (value == 'Indigo') {
+      return Colors.indigo;
+    } else {
+      return null;
     }
-    return null;
   }
 
   static void showSnackBar(String message) {
@@ -81,8 +92,7 @@ class EcommerceHelperFunctions {
     return MediaQuery.of(Get.context!).size.width;
   }
 
-  static String getFormattedDate(DateTime date,
-      {String format = 'dd MMM yyyy'}) {
+  static String getFormattedDate(DateTime date, {String format = 'dd MMM yyyy'}) {
     return DateFormat(format).format(date);
   }
 
@@ -93,8 +103,8 @@ class EcommerceHelperFunctions {
   static List<Widget> wrapWidgets(List<Widget> widgets, int rowSize) {
     final wrappedList = <Widget>[];
     for (var i = 0; i < widgets.length; i += rowSize) {
-      final rowChildren = widgets.sublist(
-          i, i + rowSize > widgets.length ? widgets.length : i + rowSize);
+      final rowChildren =
+          widgets.sublist(i, i + rowSize > widgets.length ? widgets.length : i + rowSize);
       wrappedList.add(Row(children: rowChildren));
     }
     return wrappedList;
